@@ -49,9 +49,9 @@ function takeSnapshot() {
 	console.log('takeSnapShot')
 	var width= video.videoWidth
 	var height = video.videoHeight
-	const context = hidden_canvas.getContext('2d')
+  console.log('width: ' + width + ' height: ' + height)
 
-	console.log('width: ' + width + ' height: ' + height)
+	const context = hidden_canvas.getContext('2d')
 
 	hidden_canvas.width = width
 	hidden_canvas.height = height

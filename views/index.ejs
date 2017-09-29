@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title> Photo booth</title>
+</head>
+<body>
+
+	<div><h1>Photo booth</h1><video id="camera-stream" class="camera"></video></div>
+	<div>
+	<a href id="capture" type="button">
+		<img border="0" src="capture.png" class="button"></a>
+	<a href id="saveas" download="snap.png">	
+		<img border="0" src="saveas.png" class="button"></a>
+	<a href id="trash" type="button">
+		<img border="0" src="trash.png" class="button"></a>
+	</div>	
+	<div>
+	<image id="image"></image>
+
+	<canvas id="canvas" class="can_camera"></canvas>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

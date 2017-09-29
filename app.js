@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require('path')
 const app=express()
+const port = process.env.PORT || 3000
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -13,8 +14,8 @@ app.get('/', (req, res) => {
 
 })
 
-app.listen(3000,  (req, res) =>  {
+app.listen(port,  (req, res) =>  {
 
-	console.log ('App acting on port 3000. Visit localhost:3000 in chrome')
+	console.log ('App acting on port ' + port + '. Visit localhost:'+port+' in chrome')
 
 })
